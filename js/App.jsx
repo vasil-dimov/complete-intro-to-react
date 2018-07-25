@@ -1,4 +1,5 @@
 // @flow
+
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import type { Match } from "react-router-dom";
@@ -16,7 +17,7 @@ const App = () => (
         <Route exact path="/" component={Landing} />
         <Route
           path="/search"
-          component={props => <Search show={preload.show} {...props} />}
+          component={props => <Search shows={preload.shows} {...props} />}
         />
         <Route
           path="/details/:id"
