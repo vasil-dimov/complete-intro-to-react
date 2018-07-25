@@ -14,7 +14,10 @@ const App = () => (
     <div className="app">
       <Switch>
         <Route exact path="/" component={Landing} />
-        <Route path="/search" component={Search} />
+        <Route
+          path="/search"
+          component={props => <Search show={preload.show} {...props} />}
+        />
         <Route
           path="/details/:id"
           component={(props: { match: Match }) => {
