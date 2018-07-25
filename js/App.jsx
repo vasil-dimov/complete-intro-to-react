@@ -1,7 +1,8 @@
-import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
-import Landing from './Landing';
-import Search from './Search';
+// @flow
+import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
+import Landing from "./Landing";
+import Search from "./Search";
 
 const App = () => (
   <BrowserRouter>
